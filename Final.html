@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Best Books</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row my-4">
+      <div class="col-12">
+        <h1>Top 5 Best Selling Books</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form id="best-books-form">
+          <div class="form-group mb-2">
+            <label for="month">Month:</label>
+            <input 
+              id="month" 
+              name="month" 
+              class="form-control" 
+              type="number" 
+              placeholder="01"
+              pattern="\d{2}"
+              minlength="2"
+              maxlength="2"
+              required
+
+               />
+          </div>
+          <div class="form-group mb-2">
+            <label for="date">Date:</label>
+            <input 
+              id="date"
+              name="date" 
+              class="form-control" 
+              type="number" 
+              placeholder="11"
+              pattern="\d{2}"
+              />
+          </div>
+          <div class="form-group mb-2">
+            <input id="submit" class="btn btn-primary" type="submit" value="Get Books" />
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 offset-md-1" id="books-container">
+        <h4 id="title"> On this mm/dd in year  </h5>
+        <div class="container">
+          <h5 id="book1Header" class="my-4">Book1</h5>
+          <img id="book1Img" />
+          <p id="book1Title"> Title </p>
+          <p id="book1Author"> Author </p>
+          <p id="book1Description"> Description </p>
+          
+          <h5 id="book2Header" class="my-4">Book2</h5>
+          <img id="book2Img" />
+          <p id="book2Title"> Title </p>
+          <p id="book2Author"> Author </p>
+          <p id="book2Description"> Description </p>
+
+          <h5 id="book3Header" class="my-4">Book3</h5>
+          <img id="book3Img" />
+          <p id="book3Title"> Title </p>
+          <p id="book3Author"> Author </p>
+          <p id="book3Description"> Description </p>
+
+          <h5 id="book4Header" class="my-4">Book4</h5>
+          <img id="book4Img" />
+          <p id="book4Title"> Title </p>
+          <p id="book4Author"> Author </p>
+          <p id="book4Description"> Description </p>
+
+          <h5 id="book5Header" class="my-4">Book5</h5>
+          <img id="book5Img" />
+          <p id="book5Title"> Title </p>
+          <p id="book5Author"> Author </p>
+          <p id="book5Description"> Description </p>
+
+        </div>
+
+      </div>
+      </div>
+  </div>
+
+  <!-- <script src="api-key.js"></script> -->
+  <script src="Final.js"></script>
+</body>
+</html>
+
